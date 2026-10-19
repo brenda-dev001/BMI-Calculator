@@ -78,12 +78,12 @@ fun Home(){
                 Text(text = "Height (cm)",
                     fontSize = 18.sp,
                     fontWeight = FontWeight.Bold,
-                    modifier = Modifier.padding(20.dp, 60.dp, 0.dp, 20.dp)
+                    modifier = Modifier.padding(30.dp, 60.dp, 0.dp, 10.dp)
                 )
-                Text(text = "weight (kg)",
+                Text(text = "Weight (kg)",
                     fontSize = 18.sp,
                     fontWeight = FontWeight.Bold,
-                    modifier = Modifier.padding(0.dp, 60.dp, 20.dp, 20.dp)
+                    modifier = Modifier.padding(0.dp, 60.dp, 30.dp, 10.dp)
                 )
             }
             Row(
@@ -92,8 +92,7 @@ fun Home(){
                 horizontalArrangement = Arrangement.SpaceBetween
             ) {
                 OutlinedTextField(
-                    modifier = Modifier.fillMaxWidth(0.3f)
-                        .padding(20.dp, 0.dp, 0.dp, 0.dp),
+                    modifier = Modifier.width(140.dp).height(50.dp).padding(start = 30.dp),
                     keyboardOptions = KeyboardOptions(
                        keyboardType = KeyboardType.NumberPassword
                     ),
@@ -114,12 +113,11 @@ fun Home(){
                         }
                     },
                     label = {
-                        Text(text = "Ex: 165")
+                        Text(text = "ex: 165")
                     }
                 )
                 OutlinedTextField(
-                    modifier = Modifier.fillMaxWidth(0.5f)
-                        .padding(0.dp, 0.dp, 20.dp, 0.dp),
+                    modifier = Modifier.width(140.dp).height(50.dp).padding(end = 30.dp),
                     keyboardOptions = KeyboardOptions(
                         keyboardType = KeyboardType.Decimal
                     ),
@@ -140,14 +138,15 @@ fun Home(){
                         }
                     },
                     label = {
-                        Text(text = "Ex: 70.50")
+                        Text(text = "ex: 70.50")
                     }
                 )
             }
 
             Button(modifier = Modifier
-                .fillMaxWidth()
-                .padding(50.dp),
+                .fillMaxWidth(0.5f)
+                .align(alignment = Alignment.CenterHorizontally)
+                .padding(top = 50.dp),
                 colors = ButtonDefaults.buttonColors(
                     containerColor = Blue
                 ),
