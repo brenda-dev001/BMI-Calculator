@@ -39,6 +39,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.imc_calculator.datasource.Calculations
 import com.example.imc_calculator.ui.theme.Blue
 import com.example.imc_calculator.ui.theme.Red
 
@@ -92,7 +93,7 @@ fun Home(){
                 horizontalArrangement = Arrangement.SpaceBetween
             ) {
                 OutlinedTextField(
-                    modifier = Modifier.width(140.dp).height(50.dp).padding(start = 30.dp),
+                    modifier = Modifier.width(140.dp).height(60.dp).padding(start = 30.dp),
                     keyboardOptions = KeyboardOptions(
                        keyboardType = KeyboardType.NumberPassword
                     ),
@@ -117,7 +118,7 @@ fun Home(){
                     }
                 )
                 OutlinedTextField(
-                    modifier = Modifier.width(140.dp).height(50.dp).padding(end = 30.dp),
+                    modifier = Modifier.width(140.dp).height(60.dp).padding(end = 30.dp),
                     keyboardOptions = KeyboardOptions(
                         keyboardType = KeyboardType.Decimal
                     ),
