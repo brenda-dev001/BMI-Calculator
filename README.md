@@ -14,17 +14,18 @@ The main goal of this project was to practice creating Android applications usin
 - Support decimal values for weight.
 - Update the interface dynamically using Jetpack Compose state management.
 
+
 ## 🛠️ Technologies Used
 
-\<p align="center">
-&#x20; \<img src="[https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kotlin/kotlin-original.svg](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kotlin/kotlin-original.svg)" width="40" height="40" alt="Kotlin" title="Kotlin" />
-&#x20; &nbsp;
-&#x20; \<img src="[https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jetpackcompose/jetpackcompose-original.svg](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jetpackcompose/jetpackcompose-original.svg)" width="40" height="40" alt="Jetpack Compose" title="Jetpack Compose" />
-&#x20; &nbsp;
-&#x20; \<img src="[https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/androidstudio/androidstudio-original.svg](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/androidstudio/androidstudio-original.svg)" width="40" height="40" alt="Android Studio" title="Android Studio" />
-&#x20; &nbsp;
-&#x20; \<img src="[https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gradle/gradle-original.svg](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gradle/gradle-original.svg)" width="40" height="40" alt="Gradle" title="Gradle" />
-\</p>
+<p align="center">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kotlin/kotlin-original.svg" width="40" height="40" alt="Kotlin" title="Kotlin" />
+  &nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jetpackcompose/jetpackcompose-original.svg" width="40" height="40" alt="Jetpack Compose" title="Jetpack Compose" />
+  &nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/androidstudio/androidstudio-original.svg" width="40" height="40" alt="Android Studio" title="Android Studio" />
+  &nbsp;
+</p>
+
 
 ## ⚙️ How It Works
 
