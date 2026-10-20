@@ -10,16 +10,16 @@ object Calculations {
             val weightFormatted = weight.replace(",", ".").toDoubleOrNull()
 
             if(heightFormatted != null && weightFormatted != null){
-                val imc = weightFormatted / (heightFormatted/ 100 * heightFormatted/ 100)
-                val imcFormatted = String.format("%.2f", imc)
+                val bmi = weightFormatted / (heightFormatted/ 100 * heightFormatted/ 100)
+                val bmiFormatted = String.format("%.2f", bmi)
 
                 when{
-                    imc < 18.5 -> response("BMI: $imcFormatted \n Underweight", false)
-                    imc in 18.5..24.9 -> response("BMI: $imcFormatted \n Normal weight", false)
-                    imc in 25.0..29.9 -> response("BMI: $imcFormatted \n Overweight", false)
-                    imc in 30.0..34.9 -> response("BMI: $imcFormatted \n Obesity (Grade 1)", false)
-                    imc in 35.0..39.9 -> response("BMI: $imcFormatted \n Severe obesity (Grade 2)", false)
-                    else -> response("BMI: $imcFormatted \n Morbid obesity (Grade 3)", false)
+                    bmi < 18.5 -> response("BMI: $bmiFormatted \n Underweight", false)
+                    bmi in 18.5..24.9 -> response("BMI: $bmiFormatted \n Normal weight", false)
+                    bmi in 25.0..29.9 -> response("BMI: $bmiFormatted \n Overweight", false)
+                    bmi in 30.0..34.9 -> response("BMI: $bmiFormatted \n Obesity (Grade 1)", false)
+                    bmi in 35.0..39.9 -> response("BMI: $bmiFormatted \n Severe obesity (Grade 2)", false)
+                    else -> response("BMI: $bmiFormatted \n Morbid obesity (Grade 3)", false)
                 }
 
             }
