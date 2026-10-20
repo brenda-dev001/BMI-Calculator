@@ -56,7 +56,7 @@ fun Home(){
         topBar = {
             TopAppBar(
                 title = {
-                    Text(text = "IMC calculator")
+                    Text(text = "BMI calculator")
                 },
                 colors = TopAppBarDefaults.topAppBarColors(
                     containerColor = Blue,
