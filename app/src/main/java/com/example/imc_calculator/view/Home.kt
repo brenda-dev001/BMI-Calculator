@@ -50,7 +50,7 @@ fun Home(){
     var height by remember { mutableStateOf("") }
     var weight by remember { mutableStateOf("") }
     var textFieldError by remember { mutableStateOf(false) }
-    var resultMessage by remember { mutableStateOf("IMC 24.1 \n Peso normal") }
+    var resultMessage by remember { mutableStateOf("") }
 
     Scaffold(
         topBar = {
@@ -151,7 +151,12 @@ fun Home(){
                 colors = ButtonDefaults.buttonColors(
                     containerColor = Blue
                 ),
-                onClick = {}
+                onClick = {
+                    Calculations.calculateImc(height = height, weight = weight, response = {
+                        result, textFieldState -> resultMessage = result
+                        textFieldError = textFieldState
+                    })
+                }
             ) {
                 Text(text = "Calculate", fontSize = 18.sp, fontWeight = FontWeight.Bold)
             }
